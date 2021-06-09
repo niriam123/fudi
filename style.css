@@ -1,0 +1,561 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    width:100%;
+    font-family: 'Lato', sans-serif;
+    color:black;
+    background-color: white;
+    font-size: 13px;
+    margin:0;
+    padding:0;
+    max-width:1600px;
+    margin:0 auto;
+    line-height: .76;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+img{
+    max-width: 100%;
+}
+ul,li{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    max-width: 1180px;
+    width:100%;
+    margin:0 auto;
+}
+.col-1{
+    width:8.333%;
+    float: left;
+}
+.col-3{
+    width:25%;
+    float: left;
+}
+.col-4{
+    width:33.33%;
+    float: left;
+}
+.col-5{
+    width:20%;
+    float: left;
+}
+.col-6{
+    width:50%;
+    float: left;
+}
+.col-12{
+    width:100%;
+    float: left;
+}
+.clearfix{
+    clear: left;
+    clear: right;
+    overflow: hidden;
+}
+
+/* ***************** Top recipes part ************** */
+
+#top-recipes-part{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url(img/main\ image@1X.png) no-repeat center top;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 880px;
+    position: relative;
+    overflow: hidden;
+}
+header{
+    height:100px;
+    line-height:100px;
+    vertical-align: middle;
+}
+header .logo{
+    float: left;
+    margin: 20px 0;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin:0;
+    padding:0;
+}
+header nav ul li{
+    display: inline;
+    margin-right:30px;
+}
+header nav ul li:last-child{
+    margin-right:0;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color:white;
+}
+header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
+    color:#f57365;
+    transition: 0.3s ease-in;
+}
+#top-recipes-part .recipes-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#top-recipes-part .recipes-content h5{
+    font-size: 36px;
+    font-family: 'Times New Roman';
+    color:rgba(255,255,255,0.4);
+    margin-bottom: 25px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+#top-recipes-part .recipes-content h1{
+    font-size: 100px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+}
+#top-recipes-part .recipes-content button{
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    padding: 20px 80px;
+    border: 3px solid white;
+    margin-bottom: 35px;
+    background: transparent;
+}
+#top-recipes-part .recipes-content button:hover{
+    background-color: rgba(0,0,0,.2);
+    color:#f57365;
+    transition: 0.3s ease-in;
+}
+#top-recipes-part .recipes-content h6{
+    font-size: 14px;
+    color:rgba(255,255,255,.8)
+}
+#top-recipes-part .recipes-content h6 a{
+    color: white;
+    text-decoration: 2px underline;
+}
+#top-recipes-part .recipes-content h6 a:hover{
+    color:#f57365;
+    transition: 0.3s ease-in;
+}
+/* ********************** Recipes icon part ***************** */
+#recipes-icon-part{
+    margin:100px 0;
+    background-color: white;
+    clear: both;
+    overflow: hidden;
+}
+#recipes-icon-part .recipes-icon-box{
+    width:calc(33.33% - 50px);
+    margin:0 25px;
+    text-align: center;
+}
+#recipes-icon-part .recipes-icon-box .icon{
+    height:108px;
+    width:108px;
+    border-radius: 50%;
+    border:3px solid black;
+    line-height: 108px;
+    vertical-align: middle;
+    margin: 0 auto 20px;
+    background-color: white;
+}
+#recipes-icon-part .recipes-icon-box .icon:hover{
+    border-color: #f57365;
+    background-color: black;
+}
+#recipes-icon-part .recipes-icon-box .icon img{
+    padding:20px 0;
+}
+#recipes-icon-part .recipes-icon-box .icon img.rewarded{
+    padding:37px 0 !important;
+}
+#recipes-icon-part .recipes-icon-box h5{
+    font-size: 18px;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#recipes-icon-part .recipes-icon-box h5 .bottom-border{
+    width:88px;
+    border-bottom: 2px solid #f57365;
+    margin: 10px auto;
+
+}
+#recipes-icon-part .recipes-icon-box p{
+    font-weight: light;
+    font-size: 16px;
+    color:black;
+    line-height: 22px;
+}
+
+/* ******************** Fudi app ***************** */
+#fudiapp{
+    background-color: #f7f7f7;
+    clear: both;
+    overflow: hidden;
+    padding-top: 108px;
+}
+#fudiapp .fudi-app-leftpart .iphoneimage{
+    position: relative;
+}
+#fudiapp .fudi-app-leftpart .iphoneimage img{
+    width: 100%;
+    max-width: 523px;
+    height: 779px;
+    max-height: 779px;
+}
+#fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook{
+    position: absolute;
+    top: 160px;
+    left: 43px;
+}
+#fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook img{
+    height: 795px;
+    max-height: 795px;
+    width: 100%;
+    max-width: 442px;
+}
+
+#fudiapp .fudi-app-rightpart{
+    margin-top: 75px;
+    padding-left:45px;
+}
+#fudiapp .fudi-app-rightpart h4{
+    font-size: 18px;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#fudiapp .fudi-app-rightpart h4 .border-bottom{
+    margin:10px 0;
+    border-bottom: 2px solid #f57365;
+    text-align: left;
+    width:88px;
+}
+#fudiapp .fudi-app-rightpart p{
+    color:black;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height:25px;
+    font-weight: 300;
+}
+#fudiapp .fudi-app-rightpart p.last-para{
+    margin-bottom: 30px;
+}
+#fudiapp .fudi-app-rightpart .appinfo ul{
+    margin:0;
+    padding:0;
+}
+#fudiapp .fudi-app-rightpart .appinfo ul li{
+    margin-right:10px;
+    display: inline;
+}
+
+/* ********************client review part ******************** */
+#client-reviewpart{
+    clear: both;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(73,57,73,1),  rgba(77,63,77,.8), rgba(73,57,73,1)), url(img/bg-image.png) no-repeat center;
+    height:460px;
+    width:100%;
+}
+#client-reviewpart .client-review-info{
+    padding:80px 0;
+}
+#client-reviewpart .client-image-box{
+    margin:0 auto;
+    text-align: center;
+}
+#client-reviewpart .client-image-box .clientimage{
+    margin-bottom: 30px;
+}
+#client-reviewpart .client-image-box .clientimage img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border:5px solid #948b94;
+    text-align: center;
+    margin: 0 auto;
+}
+#client-reviewpart .client-image-box q{
+    font-size: 30px;
+    color: rgba(255,255,255,0.4);
+    line-height: 40px;
+    font-weight: lighter;
+}
+#client-reviewpart .client-image-box h6{
+    font-size: 18px;
+    color:white;
+    margin-top: 30px;
+    color: rgba(255,255,255,0.4);
+}
+#client-reviewpart .owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 40px;
+}
+
+
+/* *********************** dishes part ******************* */
+
+#dishespart{
+    clear: both;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 100px;
+}
+#dishespart h4{
+    font-size: 18px;
+    color:black;
+    font-weight: bold;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+#dishespart h4 .border-bottom{
+    margin: 10px auto;
+    border-bottom: 2px solid #f57365;
+    text-align: center;
+    width: 88px;
+    display: block;
+}
+#dishespart .dishes-box{
+    position: relative;
+}
+#dishespart .dishes-box .dishes-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#dishespart .dishes-box .dishes-content h5{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:rgba(255,255,255,.7);
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+#dishespart .dishes-box .dishes-content h1{
+    font-size:36px;
+    color:white;
+    font-weight: bold;
+}
+
+
+/* ******************** dishes review part ************* */
+#dishes-review-part {
+    margin:0 auto;
+    text-align: center;
+}
+#dishes-review-part .dishes-review-info{
+    margin:60px 0;
+    clear: both;
+    overflow: hidden;
+}
+#dishes-review-part .dishes-review h1{
+    font-size: 36px;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#dishes-review-part .dishes-review h6{
+    font-size: 16px;
+    font-weight: 300;
+    color:black;
+}
+
+/* ******************** Footer part************** */
+footer{
+    height:92px;
+    line-height:92px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    border-top: 2px solid #e2e2e2;
+}
+footer .footer-left{
+    float: left;
+}
+footer .footer-left h5{
+    color: #8b8b8b;
+    font-size:14px;
+    font-weight: 300;
+}
+footer .footer-right{
+    float: right;
+}
+footer .footer-right h5{
+    color: #8b8b8b;
+    font-size:14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+footer .footer-right h5 span{
+    color:black;
+    font-weight: bold;
+}
+
+
+
+/* **************** responsive design **************** */
+@media only screen and (max-width:1200px){
+
+}
+
+/* **************** responsive design **************** */
+@media only screen and (max-width:992px){
+    /* ******** Dishespart ******* */
+    #dishespart .dishes-box{
+        width: 25% !important;
+    }
+    #dishespart .dishes-box .dishes-content h1{
+        font-size: 28px;
+    }
+
+    #fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook{
+        left: 37px;
+        right: 32px;
+    }
+}
+
+/* **************** responsive design **************** */
+@media only screen and (max-width:768px){
+    /* ******* Recipes icon part ******* */
+    #recipes-icon-part .recipes-icon-box{
+        width: calc(100% - 50px);
+        margin: 0 25px 30px;
+    }
+
+    /* ********** client review part ********** */
+    #client-reviewpart .client-image-box q{
+        font-size: 20px;
+    }
+    #client-reviewpart .client-image-box h6{
+        font-size: 14px;
+    }
+
+    /* ********** fudi app **************8 */
+    #fudiapp .fudi-app-leftpart  {
+        width: 100%;
+    }
+    #fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook{
+        left: 43px;
+    }
+    #fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook img{
+        height: 619px;
+        max-height: 619px;
+    }
+    #fudiapp .fudi-app-rightpart{
+    padding-left: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    }
+     /* ********* dishes part *********** */
+     #dishespart .dishes-box{
+        width: 33.33% !important;
+    }
+    #dishespart .dishes-box .dishes-content h1{
+        font-size: 26px;
+    }
+
+    /* *********** dishes review part ***** */
+    #dishes-review-part .dishes-review{
+        width: 25%;
+        margin-bottom: 20px;
+    }
+    #dishes-review-part .dishes-review h1{
+        font-size: 30px;
+    }
+}
+
+/* **************** responsive design **************** */
+@media only screen and (max-width:560px){
+    /* *************** top recipes part ******** */
+    #top-recipes-part .recipes-content h1{
+        font-size:60px;
+    }
+    #top-recipes-part .recipes-content h5{
+        font-size: 28px;
+    }
+    #top-recipes-part .recipes-content button{
+        padding: 20px 35px;
+    }
+    #top-recipes-part .recipes-content h6{
+        font-size: 11px;
+    }
+    /* ************* recipes icon part ********** */
+    #recipes-icon-part{
+        margin: 30px 0;
+    }
+
+    /* ************* client review part ******* */
+    #client-reviewpart .client-image-box q{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    #client-reviewpart .client-image-box h6{
+        font-size: 12px;
+    }
+    #dishespart .dishes-box{
+        width: 50% !important;
+    }
+
+    /* ***************** fudi app ************** */
+    #fudiapp{
+        padding-top: 30px;
+    }
+    #fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook{
+        left: 29px;
+        right: 25px;
+    }
+    #fudiapp .fudi-app-rightpart{
+        margin-top: 40px;
+    }
+    /* *********** dishes part ************* */
+    #dishespart{
+        margin-top: 30px;
+    }
+    #dishespart .dishes-box .dishes-content h1{
+        font-size: 20px;
+    }
+
+    /* ************* dishes review part ***********8 */
+    #dishes-review-part .dishes-review{
+        width: 50%;
+    }
+    #dishes-review-part .dishes-review-info{
+        margin: 40px 0;
+    }
+
+    /* ********** footer *************8 */
+    footer{
+        height: auto;
+        line-height: 35px;
+        clear: both;
+        overflow: hidden;
+    }
+    footer .footer-right{
+        float: left;
+    }
+}
