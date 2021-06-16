@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
+    <!-- <script src="counter.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="counter.js" type="text/javascript">
     <!------------------------ main css ---------------------->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -30,7 +32,7 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col-12">
-                    <header>
+                    <header class="header">
                         <div class="logo">
                             <img src="img/CompositeLayer@1X.png" alt="logo">
                         </div>
@@ -142,7 +144,7 @@
                 <div class="col-12 client-image-box owl-carousel owl-theme">
                     <div class="item">
                         <div class="clientimage">
-                            <img src="img/Group 3@1X.png" alt="client-image">
+                            <img src="img/1.jpg" alt="client-image">
                         </div>
                         <q>I am so happy because I found this recipe, and it just made my life easier.<br>
                             Thanks  so much for sharing!</q>
@@ -150,7 +152,7 @@
                     </div>
                     <div class="item">
                         <div class="clientimage">
-                            <img src="img/Group 3@1X.png" alt="client-image">
+                            <img src="img/2.jpg" alt="client-image">
                         </div>
                         <q>I am so happy because I found this recipe, and it just made my life easier.<br>
                             Thanks  so much for sharing!</q>
@@ -158,7 +160,7 @@
                     </div>
                     <div class="item">
                         <div class="clientimage">
-                            <img src="img/Group 3@1X.png" alt="client-image">
+                            <img src="img/3.jpg" alt="client-image">
                         </div>
                         <q>I am so happy because I found this recipe, and it just made my life easier.<br>
                             Thanks  so much for sharing!</q>
@@ -258,23 +260,23 @@
         <div class="wrapper">
         <div class="dishes-review-info">
                 <div class="col-5 dishes-review">
-                    <h1>23,567</h1>
+                    <h1 class="count">23567</h1>
                     <h6>Recipes Available</h6>
                 </div>
                 <div class="col-5 dishes-review">
-                    <h1>431,729</h1>
+                    <h1 class="count">431729</h1>
                     <h6>Active Users</h6>
                 </div>
                 <div class="col-5 dishes-review">
-                    <h1>892,173</h1>
+                    <h1 class="count">892173</h1>
                     <h6>Positive Reviews</h6>
                 </div>
                 <div class="col-5 dishes-review">
-                    <h1>56,581</h1>
+                    <h1 class="count">56581</h1>
                     <h6>Photos & Videos</h6>
                 </div>
                 <div class="col-5 dishes-review">
-                    <h1>3,182</h1>
+                    <h1 class="count">3182</h1>
                     <h6>Spices and Herbs</h6>
                 </div>
             </div>
@@ -295,7 +297,6 @@
             </div>
         </div>
     </footer>
-
 
 
 
@@ -350,5 +351,44 @@ responsive:{
 });
     </script> 
 
+    <script>
+        $(document).ready(function() {
+
+var counters = $(".count");
+var countersQuantity = counters.length;
+var counter = [];
+
+for (i = 0; i < countersQuantity; i++) {
+  counter[i] = parseInt(counters[i].innerHTML);
+}
+
+var count = function(start, value, id) {
+  var localStart = start;
+  setInterval(function() {
+    if (localStart < value) {
+      localStart++;
+      counters[id].innerHTML = localStart;
+    }
+  }, 1);
+}
+
+for (j = 0; j < countersQuantity; j++) {
+  count(0, counter[j], j);
+}
+});
+    </script>
+
+
+<script>
+    $(window).scroll(function() {
+  var header = $(document).scrollTop();
+  var headerHeight = $(".header").outerHeight();
+  if (header > headerHeight) {
+    $(".header").addClass("fixed");
+  } else {
+    $(".header").removeClass("fixed");
+  }
+});
+</script>
 </body>
 </html>

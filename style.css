@@ -80,10 +80,25 @@ h1,h2,h3,h4,h5,h6,p{
     overflow: hidden;
 }
 header{
-    height:100px;
-    line-height:100px;
+    height: 100px;
+    line-height: 100px;
     vertical-align: middle;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
 }
+header.fixed {
+        background: #f57365;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 20%);
+  }
+
 header .logo{
     float: left;
     margin: 20px 0;
@@ -299,6 +314,9 @@ header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
     text-align: center;
     margin: 0 auto;
 }
+#client-reviewpart .client-image-box .clientimage img:hover{
+    border:5px solid #f57365;
+}
 #client-reviewpart .client-image-box q{
     font-size: 30px;
     color: rgba(255,255,255,0.4);
@@ -340,6 +358,17 @@ header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
 }
 #dishespart .dishes-box{
     position: relative;
+    overflow: hidden;
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+}
+#dishespart .dishes-box img{
+    transition: transform ease-in-out 0.7s;
+    width:100%;
+}
+#dishespart .dishes-box img:hover, #dishespart .dishes-box img:active{
+    transform: scale(1.2);
 }
 #dishespart .dishes-box .dishes-content{
     position: absolute;
