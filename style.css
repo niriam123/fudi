@@ -123,7 +123,6 @@ header nav ul li a{
     color:white;
 }
 header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
-    color:#f57365;
     transition: 0.3s ease-in;
 }
 #top-recipes-part .recipes-content{
@@ -292,7 +291,7 @@ header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
 #client-reviewpart{
     clear: both;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(73,57,73,1),  rgba(77,63,77,.8), rgba(73,57,73,1)), url(img/bg-image.png) no-repeat center;
+    background: linear-gradient(to right, rgb(131, 114, 131),  rgba(77,63,77,.8), rgba(73,57,73,1)), url(img/bg-image.png) no-repeat center;
     height:460px;
     width:100%;
 }
@@ -445,6 +444,30 @@ footer .footer-right h5 span{
 }
 
 
+/* *************** Login box ************ */
+.loginbox{
+    background: linear-gradient(to right, rgb(131, 114, 131),  rgba(77,63,77,.8), rgba(73,57,73,1));
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.loginbox .loginbox-info{
+    /* background-color: #f57365; */
+    border-radius: 25px;
+    margin:0 auto;
+  
+}
+.loginbox .loginbox-info form{
+    font-size: 15px;
+}
+.loginbox .loginbox-info form .form-control{
+    margin-bottom: 10px;
+}
+.loginbox .loginbox-info .form-check .form-check-input{
+    margin-top: -1.5px;
+}
 
 /* **************** responsive design **************** */
 @media only screen and (max-width:1200px){
@@ -586,5 +609,10 @@ footer .footer-right h5 span{
     }
     footer .footer-right{
         float: left;
+    }
+}
+@media only screen and (max-width:380px){
+    .loginbox .loginbox-info .check-input-row{
+        font-size: 13px;
     }
 }
