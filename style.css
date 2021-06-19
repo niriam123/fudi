@@ -240,18 +240,6 @@ header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
     height: 779px;
     max-height: 779px;
 }
-#fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook{
-    position: absolute;
-    top: 160px;
-    left: 43px;
-}
-#fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook img{
-    height: 795px;
-    max-height: 795px;
-    width: 100%;
-    max-width: 442px;
-}
-
 #fudiapp .fudi-app-rightpart{
     margin-top: 75px;
     padding-left:45px;
@@ -318,7 +306,7 @@ header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
 }
 #client-reviewpart .client-image-box q{
     font-size: 30px;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.7);
     line-height: 40px;
     font-weight: lighter;
 }
@@ -469,6 +457,26 @@ footer .footer-right h5 span{
     margin-top: -1.5px;
 }
 
+
+/* ************ registration box *************** */
+.registrationbox{
+    background: linear-gradient(to right, rgb(131, 114, 131),  rgba(77,63,77,.8), rgba(73,57,73,1));
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.registrationbox .registration-box-info{
+    border-radius: 25px;
+    margin:0 auto;
+}
+.registrationbox form{
+    font-size: 16px;
+}
+.registrationbox .form-check .form-check-input{
+    margin-top: -1.5px;
+}
 /* **************** responsive design **************** */
 @media only screen and (max-width:1200px){
 
@@ -509,6 +517,8 @@ footer .footer-right h5 span{
     /* ********** fudi app **************8 */
     #fudiapp .fudi-app-leftpart  {
         width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
     #fudiapp .fudi-app-leftpart .iphoneimage .iphone-outerlook{
         left: 43px;
@@ -538,6 +548,17 @@ footer .footer-right h5 span{
     }
     #dishes-review-part .dishes-review h1{
         font-size: 30px;
+    }
+    /* *********** registration part *************** */
+    .registrationbox{
+        height: auto;
+        padding-top: 50px;
+    }
+    .registrationbox .email-pwd .email-text {
+        margin-bottom: 20px;
+    }
+    .registrationbox .city-state-zip .col-sm-12{
+        margin-bottom: 20px;
     }
 }
 
